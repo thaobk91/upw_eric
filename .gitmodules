@@ -1,0 +1,6 @@
+[submodule "terraair-esp32"]
+	path = terraair-esp32
+	url = https://gitlab.com/terrasls/am/terraair-esp32.git
+[submodule "terraair-esp32-old"]
+	path = terraair-esp32-old
+	url = https://gitlab.com/terrasls/am/terraair-esp32.git

@@ -1,0 +1,17 @@
+stages:
+  - deploy
+
+deploy_firmware:
+  stage: deploy
+  tags:
+    - Marc Office # runner tag
+  script:
+    - dir .\.pio\build\featheresp32\
+    # Check if the first character of the commit message is a number
+    - pwsh -Command "if ('$CI_COMMIT_TITLE' -match '^[0-9]') { 
+        scp .\.pio\build\featheresp32\firmware.bin srhomberg@airmonitor-utils.terrasls.com:/var/www/airmonitor-utils.terrasls.com/softwareupdate/feather/$CI_COMMIT_TITLE.bin;
+        scp .\.pio\build\featheresp32\firmware.bin srhomberg@airmonitor-utils.terrasls.com:/var/www/airmonitor-utils.terrasls.com/softwareupdate/feather/latest.bin;
+        Write-Host 'Firmware upload completed successfully.' 
+      } else {
+        Write-Host 'Commit title does not start with a number. Skipping upload.' 
+      }"

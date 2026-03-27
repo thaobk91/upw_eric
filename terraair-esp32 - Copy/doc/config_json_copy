@@ -1,0 +1,146 @@
+{
+  "device": {
+    "id": "AM-6003",
+    "firmware": "4.09",
+    "verbose_level": 1,
+    "location": {
+      "date": "251022",
+      "time": "142723",
+      "quality": 3,
+      "latitude": -97.59014,
+      "longitude": 30.45492,
+      "altitude": 171,
+      "speed": 0,
+      "heading": 0,
+      "HDOP": 1.7,
+      "Sats": 4,
+      "label": "Terra",
+      "group": "Main"
+    },
+    "owner": "TerraSLS"
+  },
+  "hardware": {
+    "weather_shield_version": 13,
+    "panel_watts": 25,
+    "battery": {
+      "low_power_voltage": 3.4,
+      "battery_ah": 30,
+      "low_power_nap": "2:00"
+    },
+    "sensors": {
+      "cal_date_time:": "10/10/2024 20:11:15",
+      "cal_time_stamp": 1234,
+      "cal_temp": 20.0,
+      "temp_offset": -3.2,
+      "temp_dx": 0.0,
+      "pm_enable": true,
+      "pm25_restime_min": 0,
+      "voc_enable": true,
+      "voc_offset": 0,
+      "voc_gain": 1.0,
+      "voc_trig": 100,
+      "voc_tcomp": 0.0,
+      "wind_enable": true,
+      "wind_interval_sec": 30,
+      "pid_enable": false,
+      "pid_offset_volt": 0.046,
+      "pid_gain": 40000,
+      "pid_range_ppm": 20000,
+      "pid_trig": 0.0005,
+      "pid_tcomp": 0.0,
+      "c1_enable": true,
+      "c1_offset_volt": 0.1,
+      "c1_gain": 20000,
+      "c1_range_ppm": 20000,
+      "c1_trig": 0.001,
+      "c1_tcomp": 0.0,
+      "co2_enable": true,
+      "co2_offset_volt": 0.1,
+      "co2_gain": 10000,
+      "co2_range_ppm": 10000,
+      "co2_trig": 0.001,
+      "co2_tcomp": 0.0,
+      "h2s_enable": true,
+      "h2s_offset_volt": 0.410,
+      "h2s_gain": "222.15",
+      "h2s_trig": 0.0005,
+      "h2s_tcomp": 0.0,
+      "o3_enable": true,
+      "o3_offset_volt": 1.024,
+      "o3_gain": "-44.13",
+      "o3_trig": 0.0005,
+      "o3_tcomp": 0.0,
+      "so2_enable": true,
+      "so2_offset_volt": 1.024,
+      "so2_gain": "42.55",
+      "so2_trig": 0.0005,
+      "so2_tcomp": 0.0,
+      "no2_enable": true,
+      "no2_offset_volt": 1.024,
+      "no2_gain": -29.26,
+      "no2_trig": 0.0005,
+      "no2_tcomp": 0.0,
+      "nh3_enable": true,
+      "nh3_offset_volt": 1.024,
+      "nh3_gain": -29.26,
+      "nh3_trig": 0.0005,
+      "nh3_tcomp": 0.0,
+      "red_r0": 100000,
+      "ox_r0": 800,
+      "nh3_r0": 10000,
+      "mps_enable": true
+    }
+  },
+  "server": {
+    "mqtt": {
+      "host": "a1njj292w2vjt1-ats.iot.us-west-2.amazonaws.com",
+      "port": 8883,
+      "ssl": {
+        "label": "global",
+        "ca": "-----BEGIN CERTIFICATE-----MIIDQTCCAimgAwIBAgITBmyfz5m/jAo54vB4ikPmljZbyjANBgkqhkiG9w0BAQsFADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6b24gUm9vdCBDQSAxMB4XDTE1MDUyNjAwMDAwMFoXDTM4MDExNzAwMDAwMFowOTELMAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEZMBcGA1UEAxMQQW1hem9uIFJvb3QgQ0EgMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALJ4gHHKeNXjca9HgFB0fW7Y14h29Jlo91ghYPl0hAEvrAIthtOgQ3pOsqTQNroBvo3bSMgHFzZM9O6II8c+6zf1tRn4SWiw3te5djgdYZ6k/oI2peVKVuRF4fn9tBb6dNqcmzU5L/qwIFAGbHrQgLKm+a/sRxmPUDgH3KKHOVj4utWp+UhnMJbulHheb4mjUcAwhmahRWa6VOujw5H5SNz/0egwLX0tdHA114gk957EWW67c4cX8jJGKLhD+rcdqsq08p8kDi1L93FcXmn/6pUCyziKrlA4b9v7LWIbxcceVOF34GfID5yHI9Y/QCB/IIDEgEw+OyQmjgSubJrIqg0CAwEAAaNCMEAwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0OBBYEFIQYzIU07LwMlJQuCFmcx7IQTgoIMA0GCSqGSIb3DQEBCwUAA4IBAQCY8jdaQZChGsV2USggNiMOruYou6r4lK5IpDB/G/wkjUu0yKGX9rbxenDIU5PMCCjjmCXPI6T53iHTfIUJrU6adTrCC2qJeHZERxhlbI1Bjjt/msv0tadQ1wUsN+gDS63pYaACbvXy8MWy7Vu33PqUXHeeE6V/Uq2V8viTO96LXFvKWlJbYK8U90vvo/ufQJVtMVT8QtPHRh8jrdkPSHCa2XV4cdFyQzR1bldZwgJcJmApzyMZFo6IQ6XU5MsI+yMRQ+hDKXJioaldXgjUkK642M4UwtBV8ob2xJNDd2ZhwLnoQdeXeGADbkpyrqXRfboQnoZsG4q5WTP468SQvvG5-----END CERTIFICATE-----",
+        "cert": "-----BEGIN CERTIFICATE-----MIIDWjCCAkKgAwIBAgIVALdVNeQ5ssCEUrgQ1dQh+xo9O1/OMA0GCSqGSIb3DQEBCwUAME0xSzBJBgNVBAsMQkFtYXpvbiBXZWIgU2VydmljZXMgTz1BbWF6b24uY29tIEluYy4gTD1TZWF0dGxlIFNUPVdhc2hpbmd0b24gQz1VUzAeFw0yMTA2MTUxNzUzMjBaFw00OTEyMzEyMzU5NTlaMB4xHDAaBgNVBAMME0FXUyBJb1QgQ2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDZfK1ETxJXOomkqV4OWosYk5JhIzz3UMI8QYKKEb1AHnDko2GYpfVya/F2svkqKko5Otv38aTOTr3Ny0TXopsuk6YPsKrqxWiatawL5a7SKiMwAyYqyuocY1sG6OZFfEt/f0UsGUQyOKVflVaYntpys2oqbbepqwxfQtqzqet9TW2ChN/YrYACEgIr2fO+3N9+sQKIdlr08TeBKjKGTkOGoIj7pBiRPibqTMCvxrHoeCbdagSYqu+yLuvb7lckU7Oaaphz6d9BkgYmY3Y7oB32/93xBbu0LY5z5AficrmQ8ydTC8CAd2SMymYKK0KTgmDd7Xh6DEgof9p/seFzDkmrAgMBAAGjYDBeMB8GA1UdIwQYMBaAFJdhB+cLN37bTpFbXF4gLD7zb3GQMB0GA1UdDgQWBBSo0H8l9JCrcJz6k2NqCJ5Hr+2R+zAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDANBgkqhkiG9w0BAQsFAAOCAQEAlnZgM5oTKmJsIuhRbVKIppXAi1AnqF8sn3bicqCL05gOUtY4J3nKJISjwcHT+5zoSrrszhs9Q2V+/BRL+iIQDogtk6m4p3RxwodihvkvlpVthijINASHdszJxWasBGc4lPry3rFsSUGdid7xQbkEEgxdLIFnI1DEYu//5s4UJDRU8Xby4lB+0Y/2D5xccY0ZDsq0hl5npfk0/VFzfVefHKUiTie0vhzK10eg+EimgVigHmN8yrDpf8SbLBmRdm+bC5FtXPMx3U5LmSNU5CWc7t7zAK8xix6TQi9vQD8XocP692x2Q0NCTEAD77jEJIguknehY2n/136TxBHRSs7T0w== -----END CERTIFICATE-----",
+        "key": "-----BEGIN RSA PRIVATE KEY-----MIIEpAIBAAKCAQEA2XytRE8SVzqJpKleDlqLGJOSYSM891DCPEGCihG9QB5w5KNhmKX1cmvxdrL5KipKOTrb9/Gkzk69zctE16KbLpOmD7Cq6sVomrWsC+Wu0iojMAMmKsrqHGNbBujmRXxLf39FLBlEMjilX5VWmJ7acrNqKm23qasMX0Las6nrfU1tgoTf2K2AAhICK9nzvtzffrECiHZa9PE3gSoyhk5DhqCI+6QYkT4m6kzAr8ax6Hgm3WoEmKrvsi7r2+5XJFOzmmqYc+nfQZIGJmN2O6Ad9v/d8QW7tC2Oc+QH4nK5kPMnUwvAgHdkjMpmCitCk4Jg3e14egxIKH/af7Hhcw5JqwIDAQABAoIBADONsUjC8ZcJwjztBOWkItq1iHpMLxR06UX9RWNTJyg+zwXzkJvtowv3eGpprFSJZ8S/JgtVFXruAWH58BypZ92XlEKd3zX9i3k43UqIrHMXF/Y2mOKF7Q7Don010ffgqcjUM2JrrtW0xcatkLRm22NbEixyi5nFeQ5Pu6Xg/nhZ5VCEdyRbUtanWfh14TJM+pQuqp2uoaw+g1BTEpOnz//1rmawlKTz79IM8bq8LQMQnak+I9sdE6on7jur+rINiMZc+QZFg1TtI/QekN8sxiTdCESEnPDIMADrPuUnRaSYO3iK2cYIezpacM/224HebOE4HC7c+IQB2OFVH6+ZMBkCgYEA9BF+xFA0qv/utG9BltPYv55ytV22pFqyXAkJvjvjpnsRTnuTHOh3f1eXDP12k5V/evjsSKwEBiVmSLG9Hl3rsbqTHmmr5aeQOL6V+ce5588slug9VLxcU2oI2R2DApUi158ZajI+lZgfy6gLk78KYJSu7sZaNMUI/K07ZvxeJwcCgYEA5B6EfW/xlhvTTgDi4uN/s7BvGU1VhG0ficT6Y7veDdBsAdK5ksdVtjkZ7itFELVjvVAmtRCkoBl8x0sMOHYeANq4jk4X6k1KNnRNNuIM2W9GZaSgPEwv8EFi0uBSU/bKKeMz7ztZbrBIzEZYgs2ECO1Kxm1cbbW4mk4WbCXk2z0CgYEAgpJdhD74fkcfeC5RI5TAT3tAGOFC1dijtPMs4DYAC0+pqZgY0w1W6Kx+ZfevmTMQmURUfGhyWqtldhyIdZd/gXy0OkAEM3+ae5ESgSelwGsoiq9CKHQA3KtMgoL0VMxecIZwPU0WCEfzMqv7TZaVwaepkppRJgwHS86NigIXiL8CgYEAgdUsqwfvg/PKS/cNKv04TVj5onj1Vy2UaaEGsYTXWR1qm48Ht5ZkHhZZv8g4ws26OqFHpn4WdFiNQBBioC/525qgt72StvPObTe8 SqRVk9tVQbx0xlzGXAOa71JlCQzI+xYpFNu+htUmWb0f2zKFF1+W02Ci3n4y1v/imyLmIjECgYBxz25vbXX2OQelhab4FzEBHTXcUbHO//OZF2fyMkIaw+3psxqxZ2a9ntpApeTUr5zxOq+6OmohNnLWBIZR/e/cvbtqo+FtQxIVISS1ECpMpM1zKJ1F/1i8D4lZgeZmSVtZAxxMLXVQXM3D8xy1U9Of5Qu70GlCkgemlszBnruLPQ==-----END RSA PRIVATE KEY-----"
+      }
+    },
+    "update": {
+      "endpoint": "airmonitor-utils.terrasls.com/softwareupdate",
+      "automatic_updates": false,
+      "check_interval": "24:00"
+    },
+    "error_log": {
+      "endpoint": "airmonitor-utils.terrasls.com/erorLog"
+    }
+  },
+  "network": {
+    "no_coms_nap": "0:10",
+    "wifi": {
+      "ap_always_on": false,
+      "ap_password": "",
+      "enabled": false,
+      "antenna": true,
+      "ssid": "TerraSLS",
+      "password": "weslowifi"
+    },
+    "lte": {
+      "chip": "Quectel BG95-M3 Revision: BG95M1LAR02A04",
+      "carrier": "Teal",
+      "apn": "teal",
+      "enabled": true,
+      "attach_timeout": "0:03",
+      "IMEI": "860111058858410",
+      "IMSI": "234500024594022",
+      "CCID": "8901990000001524597F",
+      "RSSI": 33,
+      "gps_enabled": true,
+      "lock_gps": false
+    },
+    "offline_mode": false
+  },
+  "sampling": {
+    "pumping_time":0,
+    "sampling_interval_sec": 2,
+    "report_interval_count": "15",
+    "sleep_time_sec": 0,
+    "engineering": false
+  }
+}

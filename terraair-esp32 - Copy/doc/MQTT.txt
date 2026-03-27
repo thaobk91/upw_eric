@@ -1,0 +1,74 @@
+reset the system - hot reset
+if "delay" in second, is not specified, it is =0 and reboot is immediate 
+{"msg":"reset", "delay":120}     
+
+request configuration 
+{"msg":"config"}    
+
+clear the log
+{"msg":"rstlog"}    
+
+request error report and clear error count
+{"msg":"errorlog"}   
+
+update the firmware with the binary file "blink" in the example bellow
+if "version" is left out the message, uses the default file name "latest" to update the firmware
+{"msg":"update", "version":"blink"}   
+
+update the config.json file
+{"msg":"json", "name":"AM-6003"}
+
+request gps report
+the gps coordinate is acquired at boot
+at boot, the system will attempts to acquire the position 10 times before giving up and resuming operation
+the data is valid when the date, time are correct and lock_gps = true
+{"msg":"gps"}
+
+set the correction offset to the temperature sensor 
+{"msg":"caltemp", "offset":-3.2}
+
+switch ON / OFF the engineering mode
+in this mode the reading from the senors are reported in volt instead of ppm
+{"msg":"eemode", "command":1}
+{"msg":"eemode", "command":0}
+
+
+======================================================================================
+configure the EC(ElectroChemical)/SPECs sensors
+model: 0=h2s, 1=o3, 3=so2, 4=no2  (not used 5=voc, 6=nh3)
+root: not used
+sensitivity: nA/ppm
+enable: 0 (OFF), 1 (ON)
+{"msg":"configureSPEC","model":0,"root":0,"sensitivity":"60","enable":1}
+
+zero EC/SPECs sensors
+model: 0=h2s, 1=o3, 3=so2, 4=no2, 5=voc, 6=nh3
+{"msg":"calibrateSPEC","model":0}
+
+zero NH3 sensor
+{"msg":"calibNH3"}
+
+calibrate the response of an EC/SPEC sensor
+model: 0=h2s, 1=o3, 3=so2, 4=no2, 5=voc, 6=nh3
+qty: ppm
+threshold: Volt or count for VOC  (min signal for peak detection)
+tcomp: 0 (default, no temperature compensation)  coeficient mulitplier per 1 C degree 
+{"msg":"calibSPECdetect","model":5,"qty":10,"threshold":100,"tcomp":0.0}
+
+======================================================================================
+configure the IRs & PID sensors
+model: 0=co2, 1=c1, 2=pid
+range: ppm
+gain: not used, make it same value as range !!!
+enable: 0 (OFF), 1 (ON)
+{"msg":"configureIR","model":0,"range":50000,"gain":50000,"enable":1}
+
+zero IRs & PID sensors
+model: 0=co2, 1=c1, 2=pid
+{"msg":"calibIR","model":0}
+
+model: 0=co2, 1=c1, 2=pid
+qty: ppm
+threshold: volt (min signal for peak detection)
+tcomp: 0 (default, no temperature compensation)  coeficient mulitplier per 1 C degree
+{"msg":"calibIRDetect","model":0,"qty":"10000","threshold":0.001,"tcomp":0.0}
